@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VKAPIManager.h"
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController{
     BOOL isAuth;
     NSString *appID;
 }

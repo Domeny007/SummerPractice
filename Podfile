@@ -6,5 +6,7 @@ target 'SummerPracticeProject' do
   # use_frameworks!
 
   # Pods for SummerPracticeProject
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'AFNetworking', '~> 3.0'
 
 end

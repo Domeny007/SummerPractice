@@ -32,9 +32,8 @@
         vkWebView.scalesPageToFit = YES;
         [self.view addSubview:vkWebView];
     }
-    // Создаем запрос на авторизацию приложения, указываем appID (код приложения, полученный при регистрации вконтакте по ссылке: http://vkontakte.ru/editapp?act=create&site=1) и нужные нам права, в данном случае это доступ к стене (wall), к фото (photos), чтобы можно было размещать фотографии на стену пользователя.
     
-    NSString *authLink = [NSString stringWithFormat:@"http://api.vk.com/oauth/authorize?client_id=%@&scope=wall,photos&redirect_uri=http://api.vk.com/blank.html&display=touch&response_type=token", @"6632185"];
+    NSString *authLink = [NSString stringWithFormat:@"http://api.vk.com/oauth/authorize?client_id=%@&scope=wall,photos,friends&redirect_uri=http://api.vk.com/blank.html&display=touch&response_type=token", @"6632185"];
     NSURL *url = [NSURL URLWithString:authLink];
     
     [vkWebView loadRequest:[NSURLRequest requestWithURL:url]];
@@ -71,7 +70,6 @@
                                                 andString:@"&"
                                               innerString:[[[webView request] URL] absoluteString]];
         
-        // Получаем id пользователя, пригодится нам позднее
         NSArray *userAr = [[[[webView request] URL] absoluteString] componentsSeparatedByString:@"&user_id="];
         NSString *user_id = [userAr lastObject];
         NSLog(@"User id: %@", user_id);
@@ -81,8 +79,6 @@
         
         if(accessToken){
             [[NSUserDefaults standardUserDefaults] setObject:accessToken forKey:@"VKAccessToken"];
-            // Сохраняем дату получения токена. Параметр expires_in=86400 в ответе ВКонтакта, говорит сколько будет действовать токен.
-            // В данном случае, это для примера, мы можем проверять позднее истек ли токен или нет
             [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"VKAccessTokenDate"];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }

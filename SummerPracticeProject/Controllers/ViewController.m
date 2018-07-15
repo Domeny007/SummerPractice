@@ -8,19 +8,34 @@
 
 #import "ViewController.h"
 #import "vkLoginViewController.h"
+#import "VKAPIManager.h"
+#import "MainViewController.h"
+
+@interface ViewController()
+
+@end
 
 
 @implementation ViewController
+
 @synthesize appID, loginButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    NSString *accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"VKAccessToken"];
+    if (accessToken) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        ViewController *testViewController = (ViewController *)[storyboard  instantiateViewControllerWithIdentifier:@"mainVC"];
+        
+        [self presentViewController:testViewController animated:NO completion:nil];
+        
+    }
 }
+
 - (IBAction)loginButtonPressed:(id)sender {
     vkLoginViewController *login = [[vkLoginViewController alloc] init];
     self.appID = @"6632185";
@@ -30,18 +45,10 @@
     NSLog(@"doAuth");
 }
 
+
 - (void)authComplete {
     NSLog(@"success");
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)dealloc {
     [loginButton release];

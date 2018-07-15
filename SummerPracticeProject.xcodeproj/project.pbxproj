@@ -12,8 +12,17 @@
 		AA1B849920F60B1600ADBD6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1B849820F60B1600ADBD6D /* Assets.xcassets */; };
 		AA1B849C20F60B1600ADBD6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1B849A20F60B1600ADBD6D /* LaunchScreen.storyboard */; };
 		AA1B849F20F60B1600ADBD6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1B849E20F60B1600ADBD6D /* main.m */; };
+		AA7C70B620FA0E7100FE7BA5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C70B520FA0E7100FE7BA5 /* MainViewController.m */; };
+		AA7C70B920FA0FFB00FE7BA5 /* VKAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C70B820FA0FFB00FE7BA5 /* VKAPIManager.m */; };
 		AA806A1520F8BC0B0009E847 /* vkLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA806A1420F8BC0B0009E847 /* vkLoginViewController.m */; };
 		AA806A1820F8C2DD0009E847 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA806A1720F8C2DD0009E847 /* ViewController.m */; };
+		AAECBA4A20FA537B0015C80C /* NewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA4920FA537B0015C80C /* NewItem.m */; };
+		AAECBA4D20FA54220015C80C /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA4C20FA54220015C80C /* Attachment.m */; };
+		AAECBA5720FA71A70015C80C /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA5620FA71A70015C80C /* NewsTableViewCell.m */; };
+		AAECBA5B20FB7FD80015C80C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA5A20FB7FD80015C80C /* DetailsViewController.m */; };
+		AAECBA5F20FB7FF50015C80C /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA5E20FB7FF50015C80C /* TextTableViewCell.m */; };
+		AAECBA6220FB80020015C80C /* AttachTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECBA6120FB80020015C80C /* AttachTableViewCell.m */; };
+		BD5656EF633B5353A7EEB67F /* libPods-SummerPracticeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3F84EA8D39D75309F78BA /* libPods-SummerPracticeProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +34,30 @@
 		AA1B849B20F60B1600ADBD6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1B849D20F60B1600ADBD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1B849E20F60B1600ADBD6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA7C70B420FA0E7100FE7BA5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AA7C70B520FA0E7100FE7BA5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		AA7C70B720FA0FFB00FE7BA5 /* VKAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKAPIManager.h; sourceTree = "<group>"; };
+		AA7C70B820FA0FFB00FE7BA5 /* VKAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKAPIManager.m; sourceTree = "<group>"; };
 		AA806A1320F8BC0B0009E847 /* vkLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vkLoginViewController.h; sourceTree = "<group>"; };
 		AA806A1420F8BC0B0009E847 /* vkLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vkLoginViewController.m; sourceTree = "<group>"; };
 		AA806A1620F8C2DD0009E847 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AA806A1720F8C2DD0009E847 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAECBA4820FA537B0015C80C /* NewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewItem.h; sourceTree = "<group>"; };
+		AAECBA4920FA537B0015C80C /* NewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewItem.m; sourceTree = "<group>"; };
+		AAECBA4B20FA54220015C80C /* Attachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		AAECBA4C20FA54220015C80C /* Attachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attachment.m; sourceTree = "<group>"; };
+		AAECBA5320FA59220015C80C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		AAECBA5520FA71A70015C80C /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		AAECBA5620FA71A70015C80C /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		AAECBA5920FB7FD80015C80C /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		AAECBA5A20FB7FD80015C80C /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		AAECBA5D20FB7FF50015C80C /* TextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		AAECBA5E20FB7FF50015C80C /* TextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
+		AAECBA6020FB80020015C80C /* AttachTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttachTableViewCell.h; sourceTree = "<group>"; };
+		AAECBA6120FB80020015C80C /* AttachTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttachTableViewCell.m; sourceTree = "<group>"; };
+		CAE3F84EA8D39D75309F78BA /* libPods-SummerPracticeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SummerPracticeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E05E067DFFD471F3EF11C027 /* Pods-SummerPracticeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerPracticeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SummerPracticeProject/Pods-SummerPracticeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		ED70359FF47D6F9660ED35C3 /* Pods-SummerPracticeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerPracticeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SummerPracticeProject/Pods-SummerPracticeProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5656EF633B5353A7EEB67F /* libPods-SummerPracticeProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +77,8 @@
 			children = (
 				AA1B848E20F60B1400ADBD6D /* SummerPracticeProject */,
 				AA1B848D20F60B1400ADBD6D /* Products */,
+				B0F3C6A5819EA4830DA16463 /* Pods */,
+				F42F91304DD09F7A87F9B3AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +93,109 @@
 		AA1B848E20F60B1400ADBD6D /* SummerPracticeProject */ = {
 			isa = PBXGroup;
 			children = (
+				AAECBA4E20FA587F0015C80C /* Other */,
+				AAECBA5820FB7FB40015C80C /* Detail */,
+				AA1B849E20F60B1600ADBD6D /* main.m */,
+				AAECBA5420FA71860015C80C /* Cells */,
+				AAECBA5020FA58C80015C80C /* Controllers */,
+				AAECBA4F20FA58B40015C80C /* API */,
+				AAECBA4720FA536D0015C80C /* Model */,
+				AA1B849D20F60B1600ADBD6D /* Info.plist */,
+			);
+			path = SummerPracticeProject;
+			sourceTree = "<group>";
+		};
+		AAECBA4720FA536D0015C80C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAECBA4820FA537B0015C80C /* NewItem.h */,
+				AAECBA4920FA537B0015C80C /* NewItem.m */,
+				AAECBA4B20FA54220015C80C /* Attachment.h */,
+				AAECBA4C20FA54220015C80C /* Attachment.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAECBA4E20FA587F0015C80C /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				AA1B848F20F60B1400ADBD6D /* AppDelegate.h */,
 				AA1B849020F60B1400ADBD6D /* AppDelegate.m */,
 				AA1B849520F60B1400ADBD6D /* Main.storyboard */,
 				AA1B849820F60B1600ADBD6D /* Assets.xcassets */,
 				AA1B849A20F60B1600ADBD6D /* LaunchScreen.storyboard */,
-				AA1B849D20F60B1600ADBD6D /* Info.plist */,
-				AA1B849E20F60B1600ADBD6D /* main.m */,
+				AAECBA5320FA59220015C80C /* Constants.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AAECBA4F20FA58B40015C80C /* API */ = {
+			isa = PBXGroup;
+			children = (
 				AA806A1320F8BC0B0009E847 /* vkLoginViewController.h */,
 				AA806A1420F8BC0B0009E847 /* vkLoginViewController.m */,
+				AA7C70B720FA0FFB00FE7BA5 /* VKAPIManager.h */,
+				AA7C70B820FA0FFB00FE7BA5 /* VKAPIManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AAECBA5020FA58C80015C80C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				AA806A1620F8C2DD0009E847 /* ViewController.h */,
 				AA806A1720F8C2DD0009E847 /* ViewController.m */,
+				AA7C70B420FA0E7100FE7BA5 /* MainViewController.h */,
+				AA7C70B520FA0E7100FE7BA5 /* MainViewController.m */,
 			);
-			path = SummerPracticeProject;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAECBA5420FA71860015C80C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAECBA5520FA71A70015C80C /* NewsTableViewCell.h */,
+				AAECBA5620FA71A70015C80C /* NewsTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AAECBA5820FB7FB40015C80C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AAECBA5C20FB7FE00015C80C /* cells */,
+				AAECBA5920FB7FD80015C80C /* DetailsViewController.h */,
+				AAECBA5A20FB7FD80015C80C /* DetailsViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AAECBA5C20FB7FE00015C80C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAECBA5D20FB7FF50015C80C /* TextTableViewCell.h */,
+				AAECBA5E20FB7FF50015C80C /* TextTableViewCell.m */,
+				AAECBA6020FB80020015C80C /* AttachTableViewCell.h */,
+				AAECBA6120FB80020015C80C /* AttachTableViewCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		B0F3C6A5819EA4830DA16463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E05E067DFFD471F3EF11C027 /* Pods-SummerPracticeProject.debug.xcconfig */,
+				ED70359FF47D6F9660ED35C3 /* Pods-SummerPracticeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F42F91304DD09F7A87F9B3AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3F84EA8D39D75309F78BA /* libPods-SummerPracticeProject.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA1B84A220F60B1600ADBD6D /* Build configuration list for PBXNativeTarget "SummerPracticeProject" */;
 			buildPhases = (
+				4357D01E9D223932CD75FF1A /* [CP] Check Pods Manifest.lock */,
 				AA1B848820F60B1400ADBD6D /* Sources */,
 				AA1B848920F60B1400ADBD6D /* Frameworks */,
 				AA1B848A20F60B1400ADBD6D /* Resources */,
@@ -107,6 +230,7 @@
 				TargetAttributes = {
 					AA1B848B20F60B1400ADBD6D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -141,14 +265,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4357D01E9D223932CD75FF1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SummerPracticeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA1B848820F60B1400ADBD6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAECBA4D20FA54220015C80C /* Attachment.m in Sources */,
+				AAECBA5B20FB7FD80015C80C /* DetailsViewController.m in Sources */,
 				AA806A1520F8BC0B0009E847 /* vkLoginViewController.m in Sources */,
+				AAECBA4A20FA537B0015C80C /* NewItem.m in Sources */,
+				AA7C70B920FA0FFB00FE7BA5 /* VKAPIManager.m in Sources */,
 				AA1B849F20F60B1600ADBD6D /* main.m in Sources */,
+				AAECBA5720FA71A70015C80C /* NewsTableViewCell.m in Sources */,
 				AA806A1820F8C2DD0009E847 /* ViewController.m in Sources */,
+				AAECBA6220FB80020015C80C /* AttachTableViewCell.m in Sources */,
+				AA7C70B620FA0E7100FE7BA5 /* MainViewController.m in Sources */,
+				AAECBA5F20FB7FF50015C80C /* TextTableViewCell.m in Sources */,
 				AA1B849120F60B1400ADBD6D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +440,10 @@
 		};
 		AA1B84A320F60B1600ADBD6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05E067DFFD471F3EF11C027 /* Pods-SummerPracticeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U76UU38W98;
 				INFOPLIST_FILE = SummerPracticeProject/Info.plist;
@@ -298,14 +453,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iosLab.SummerPracticeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AA1B84A420F60B1600ADBD6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED70359FF47D6F9660ED35C3 /* Pods-SummerPracticeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U76UU38W98;
 				INFOPLIST_FILE = SummerPracticeProject/Info.plist;
@@ -315,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iosLab.SummerPracticeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
