@@ -85,6 +85,29 @@
     
     
     
+    NSString *logout = @"http://api.vk.com/oauth/logout";
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:logout]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                       timeoutInterval:60.0];
+   
+    NSURLSession *session = [NSURLSession sharedSession];
+    __block NSData *responseData;
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *responce, NSError *error) {
+        responseData = data;
+        if(responseData){
+            
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"VKAccessUserId"];
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"VKAccessToken"];
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"VKAccessTokenDate"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }] resume];
+    
+                                    
+    
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
