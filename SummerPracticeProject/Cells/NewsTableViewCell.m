@@ -16,6 +16,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *text;
 
 @property (retain, nonatomic) IBOutlet UILabel *showAll;
+@property (retain, nonatomic) IBOutlet UILabel *likeCountLabel;
 
 
 @end
@@ -23,6 +24,10 @@
 @implementation NewsTableViewCell
 
 -(void) setupCellForItem:(NewItem *)item {
+    
+    NSString *likesString = @"Likes: ";
+    
+    self.likeCountLabel.text = [likesString stringByAppendingString:item.likesCount];
     //owner
     self.newsDateTime.text = item.formatedDate;
     if (item.text.length > SHORT_TEXT_LENGTH) {
@@ -37,11 +42,8 @@
     }
 }
 
-
 - (void)dealloc {
-    [_newsDateTime release];
-    [_showAll release];
-    [_text release];
+    [_likeCountLabel release];
     [super dealloc];
 }
 @end

@@ -11,16 +11,9 @@
 
 @implementation NewItem
 
-// маппинг сущности NewsItem из NSDictionary
 + (instancetype)objectFromDictionary:(NSDictionary *)dict {
     NewItem *item = [[NewItem alloc] init];
     
-    // owner
-    NSDictionary *owner = dict[@"group"] ?: dict[@"user"];
-    if (![owner isKindOfClass:[NSNull class]]) {
-        item.ownerName = owner[@"name"] ? : [NSString stringWithFormat:@"%@ %@", owner[@"last_name"], owner[@"first_name"]];
-        item.ownerImageURL = [NSURL URLWithString:owner[@"photo"]];
-    }
     // content
     item.date = [NSDate dateWithTimeIntervalSince1970:[dict[@"date"] integerValue]];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -28,6 +21,8 @@
     item.formatedDate = [formatter stringFromDate:item.date];
     item.text = [dict[@"text"] stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
     item.text = (item.text.length > 8192) ? [item.text substringToIndex:8192] : item.text;
+    
+    item.likesCount =[NSString stringWithFormat:@"%@", dict[@"likes"][@"count"]];
     
     // attachment
     NSDictionary *attach = dict[@"attachment"];

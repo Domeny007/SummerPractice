@@ -64,7 +64,7 @@
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
-    // Если есть токен сохраняем его
+    
     if ([vkWebView.request.URL.absoluteString rangeOfString:@"access_token"].location != NSNotFound) {
         NSString *accessToken = [self stringBetweenString:@"access_token="
                                                 andString:@"&"

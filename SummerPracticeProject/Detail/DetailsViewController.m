@@ -65,8 +65,6 @@
     }
     cell.titleTextView.scrollEnabled = ([attach.title isEqualToString:@""]) ? YES : NO;
     cell.titleTextView.text = attach.title;
-    
-    cell.backView.backgroundColor = ([attach.type isEqualToString:@"photo"]) ? [UIColor whiteColor]: ATTACH_COLOR;
     if ([attach.type isEqualToString:@"photo"] || [attach.type isEqualToString:@"link"]) {
         cell.typeLabel.text = nil;
     } else {
