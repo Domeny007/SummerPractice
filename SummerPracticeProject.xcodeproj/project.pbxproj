@@ -93,9 +93,9 @@
 		AA1B848E20F60B1400ADBD6D /* SummerPracticeProject */ = {
 			isa = PBXGroup;
 			children = (
+				AAECBA5320FA59220015C80C /* Constants.h */,
 				AAECBA4E20FA587F0015C80C /* Other */,
 				AAECBA5820FB7FB40015C80C /* Detail */,
-				AA1B849E20F60B1600ADBD6D /* main.m */,
 				AAECBA5420FA71860015C80C /* Cells */,
 				AAECBA5020FA58C80015C80C /* Controllers */,
 				AAECBA4F20FA58B40015C80C /* API */,
@@ -119,12 +119,12 @@
 		AAECBA4E20FA587F0015C80C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AA1B849E20F60B1600ADBD6D /* main.m */,
 				AA1B848F20F60B1400ADBD6D /* AppDelegate.h */,
 				AA1B849020F60B1400ADBD6D /* AppDelegate.m */,
 				AA1B849520F60B1400ADBD6D /* Main.storyboard */,
 				AA1B849820F60B1600ADBD6D /* Assets.xcassets */,
 				AA1B849A20F60B1600ADBD6D /* LaunchScreen.storyboard */,
-				AAECBA5320FA59220015C80C /* Constants.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";

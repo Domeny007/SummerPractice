@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) Attachment *attachment;
 @property (strong, nonatomic) NSArray *attachments;
+@property (strong, nonatomic) NSString *likesCount;
 
 + (instancetype)objectFromDictionary:(NSDictionary *)dict;
 

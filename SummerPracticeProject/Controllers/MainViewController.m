@@ -15,6 +15,8 @@
 
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
+
 
 @property (strong, nonatomic) VKAPIManager *manager;
 
@@ -24,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createRefreshControl];
+    
     
     self.arrayResults = [NSMutableArray array];
     self.manager = [VKAPIManager managerWithDelegate:self];
@@ -35,11 +39,27 @@
     
 }
 
+-(void)createRefreshControl {
+   _refreshControl = [[UIRefreshControl alloc]init];
+    [self.tableView addSubview:_refreshControl];
+    [_refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+}
+
+-(void)refreshTable {
+    [self.arrayResults removeAllObjects];
+    [self downloadData];
+    
+    [_refreshControl endRefreshing];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     if (self.arrayResults.count != 0) {
         return;
     }
-    
+    [self downloadData];
+}
+
+-(void)downloadData {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         [self.manager fetchNews];
@@ -48,7 +68,6 @@
             [self.tableView reloadData];
         });
     });
-    
 }
 
 
@@ -95,7 +114,9 @@
     __block NSData *responseData;
     [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *responce, NSError *error) {
         responseData = data;
-        if(responseData){
+        
+        
+        if(error == nil && responseData){
             
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"VKAccessUserId"];
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"VKAccessToken"];
@@ -103,6 +124,7 @@
             [[NSUserDefaults standardUserDefaults] synchronize];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
+        
     }] resume];
     
                                     

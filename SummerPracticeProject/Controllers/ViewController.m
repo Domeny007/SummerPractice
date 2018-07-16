@@ -29,9 +29,9 @@
     if (accessToken) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
-        ViewController *testViewController = (ViewController *)[storyboard  instantiateViewControllerWithIdentifier:@"mainVC"];
+        ViewController *mainViewController = (ViewController *)[storyboard  instantiateViewControllerWithIdentifier:@"mainVC"];
         
-        [self presentViewController:testViewController animated:NO completion:nil];
+        [self presentViewController:mainViewController animated:NO completion:nil];
         
     }
 }
@@ -48,11 +48,6 @@
 
 - (void)authComplete {
     NSLog(@"success");
-}
-
-- (void)dealloc {
-    [loginButton release];
-    [super dealloc];
 }
 
 @end
